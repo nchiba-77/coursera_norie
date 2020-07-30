@@ -2,8 +2,8 @@
 <ol>
     <li ng-repeat="item in list.found">
      {{item.short_name}}, {{item.name}},{{item.description}} 
-      <found-items ></found-items>
-      <button ng-click="list.removeItem($index);">Remove Item</button>
+      
+      <button ng-click="list.removeItem($index);">Don't want this one!</button>
     </li>
 </ol>
 <div class="emptyMessage" ng-if="list.found.length==0">Not found</div>
